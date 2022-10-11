@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FK // VCE</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+
+</head>
+<body>
+    <div class="background"></div>
+    <div class="main-page">
+        <div class="page-section w-100">
+            <h1>// VCE_</h1>
+        </div>
+        <hr>
+        <div class="page-section">
+            <h1 class="tac">Initial Setup:</h1>
+            <br>
+            <h3>Discord Account Token:</h3>
+            <!-- <input type="text" name="token" id="input-token" placeholder="Token"> -->
+            <input type="password" name="token" id="input-token" placeholder="Token">
+
+            <br>
+            <h3>Channel ID:</h3>
+            <input type="text" name="channel" id="input-channel" placeholder="Channel ID">
+        </div>
+
+        <hr>
+        <div class="page-section">
+            <h1 class="tac">Payload Setup:</h1>
+            <br>
+
+            <h3>animation_id:</h3>
+            <p class="tac">Tested some of these, seems to range <br>
+                from 1-20, i think duplicates are <br> slightly different speeds??
+            </p>
+            <br>
+            <ul>
+                <li>0: Bouncy - both sides</li>
+                <li>1: Bouncy - both sides</li>
+                <li>2: Bouncy - both sides</li>
+                <li>3: Bouncy - both sides</li>
+                <li>4: Bouncy - both sides (faster?)</li>
+                <li>5: Offset Swipe - Left then Right</li>
+                <li>6: Offset Swipe - Left then Right</li>
+                <li>7: Offset Swipe - Right then Left</li>
+                <li>8: Offset Swipe - Right then Left</li>
+                <li>9: Offset Swipe - Right then Left</li>
+                <li>10: Raster - Top to Bottom</li>
+                <li>11: Raster - Bottom to Top</li>
+                <li>12: Raster - Left to Right</li>
+                <li>13: Raster - Right to Left</li>
+                <li>14: Raster - Center to Outer</li>
+                <li>15: Raster Spiral - Center to Outer</li>
+                <li>16: Rain - Top to Bottom</li>
+                <li>17: Rain - Bottom to Top</li>
+                <li>18: Rain - Left to Right</li>
+                <li>19: Rain - Right to Left</li>
+                <li>20: Rain - T Left to B Right</li>
+            </ul>
+            <input type="number" name="animation_id" id="input-animation-id" placeholder="animation_id">
+            <br>
+            <br>
+
+            <h3>animation_type:</h3>
+            <p>
+                Seems to always be 0, animated / non animated?
+            </p>
+            <input type="number" name="animation_type" id="input-animation-type" placeholder="animation_type">
+            <br>
+            <br>
+
+            <h3>emoji_id: (Null if blank)</h3>
+            <input type="number" name="emoji_id" id="input-emoji-id" placeholder="emoji_id">
+            <br>
+            <br>
+
+            <h3>emoji_name:</h3>
+            <input type="text" name="emoji_name" id="input-emoji-name" placeholder="emoji_name">
+            <br>
+            <br>
+
+
+        </div>
+        <hr>
+        <div class="page-section">
+            <h1 class="tac">Exec:</h1>
+
+            <button 
+                class="button-execute"
+                onclick="vcEffectInput()"
+            >Execute</button>
+
+            <button 
+                class="button-execute"
+                onclick="vcEffect(20, 0, '', '💀')"
+            >💀</button>
+        </div>
+        <hr>
+        <div class="page-section w-100">
+            <h3>Console</h3>
+            <textarea class="console-area" name="console" id="console" cols="100" rows="10" ></textarea>
+        </div>
+
+
+        <footer>
+            Built by: 
+            <a href="https://tehbb.xyz/">
+                <img src="./assets/img/Tehbb_Text_Logo.png" alt="Tehbb">
+            </a>
+        </footer>
+    </div>
+</body>
+    <!-- utils -->
+    <script src="./js/logger.js"></script>
+
+    <!-- main -->
+    <script src="./js/main.js"  onload="init()"></script>
+
+</html>

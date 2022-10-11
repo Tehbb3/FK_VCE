@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(31, 42, 56);
+    color: #eee;
+    font-family: monospace;
+}
+* { margin: 0; }
+:root {
+    --d-border: red;
+    --d-solid: #101015;
+    --d-text: #eee;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    filter: blur(1rem);
+    background-image: url(./../assets/img/283918.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main-page {
+    max-width: 700px;
+    margin: 0 auto;
+    min-height: 200px;
+    background-color: var(--d-solid);
+    border: 1px solid var(--d-border);
+
+
+}
+.page-section {
+    width: max-content;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 auto;
+}
+hr {
+    border: 0;
+    border-top: 1px solid var(--d-border);
+}
+input {
+    padding: 5px;
+    color: var(--d-text);
+    background-color: var(--d-solid);
+    border: 1px solid var(--d-border);
+    text-align: center;
+    min-width: 300px;
+    margin: 5px 0;
+}
+.console-area {
+    font-family: monospace;
+    display: block;
+    width: 95%;
+    padding: 5px;
+    color: var(--d-text);
+    background-color: var(--d-solid);
+    border: 1px solid var(--d-border);
+    margin: 5px auto;
+    resize: vertical;
+}
+.button-execute {
+    padding: 5px;
+    color: var(--d-text);
+    background-color: var(--d-solid);
+    border: 1px solid var(--d-border);
+    margin: 10px;
+    display: inline-block;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    font-family: monospace;
+    line-height: 14px;
+    font-size: 12px;
+}
+/* kina hacky */
+footer a img {
+    height: 14px;
+}
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* prolly clean this */
+.tac {
+    text-align: center;
+}
+.w-100 {
+    width: 100%;
+}
