@@ -1,6 +1,6 @@
 # VCE Client_
-User macro for discord voice channel effects
-Lightweight, minimal discord voice channel effect client.
+User macro for discord voice channel emoji effects
+Lightweight, minimal discord voice channel emoji effect client.
 
 #### Quick Disclaimer:
 I am not responsible for anything related to using this, it is for "educational" purpouses only.
